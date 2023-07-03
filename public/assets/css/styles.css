@@ -1,0 +1,967 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --blue: #0659a7;
+  --dark-blue: #1b325e;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #fafafa;
+  --dark-grey: #d9d9d942;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 6% 10% 7% 15%;
+}
+
+.bg-grey {
+  background-color: var(--dark-grey);
+}
+
+.btn {
+  background-color: var(--dark-blue);
+}
+
+.footer {
+  background-color: var(--dark-blue);
+}
+
+.title {
+  color: var(--blue);
+  font-family: "Poppins", sans-serif;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.nav-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--grey);
+  height: 100%;
+  padding-top: 20px;
+  z-index: 5;
+}
+
+.nav-container .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container .side-nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-container .side-nav .nav-menu .nav-item {
+  rotate: 270deg;
+  font-family: "Poppins", sans-serif;
+  margin-top: 4rem !important;
+  margin-bottom: 4.5rem !important;
+}
+
+/* .nav-item a:active{
+  color: #0d6efd;
+  text-decoration: underline !important;
+} */
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  background-color: #0659a7;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+/* .nav-item a:active{
+ text-decoration: underline !important;
+ color: #0659a7;
+} */
+
+/* NAVBAR TABLET & MOBILE */
+.top-nav {
+  background-color: var(--grey);
+}
+
+.top-nav .container .offcanvas {
+  right: -12rem;
+  background-color: var(--grey);
+}
+
+.top-nav .container .offcanvas .offcanvas-header {
+  margin-top: 5%;
+}
+
+.top-nav .container .navbar-toggler {
+  color: #fafafa;
+}
+
+.top-nav .container .offcanvas .navbar-nav .dropdown-menu {
+  background-color: #fafafa;
+}
+
+.top-nav .container .offcanvas .navbar-nav .nav-link:not(.show) {
+  padding-bottom: 1.5rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--blue);
+  color: var(--black);
+}
+
+.top-nav .container .offcanvas .navbar-nav .dropdown-menu.show {
+  border: none;
+  border-bottom: 1px solid var(--blue);
+  border-radius: 0;
+}
+
+/* HOMEPAGE */
+.homepage {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url("../img/Banner\ TRICOM\ Home\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-hp {
+  font-family: "Rubik", sans-serif;
+}
+
+/* MOBILE-SERVICES */
+.mobile-services .services-content .card .card-body .text {
+  text-align: justify;
+}
+
+.mobile-services .services-content .card .card-body .btn {
+  justify-self: center;
+  margin-top: 2%;
+}
+
+.mobile-services .services-content .owl-dots button {
+  background-color: var(--blue) !important;
+  border-radius: 1rem;
+  margin-right: 1%;
+  transition: 0.3s;
+}
+
+/* MEDIA QUERY */
+
+/* MOBILE */
+@media (min-width: 0px) and (max-width: 576px) {
+  .side-nav {
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 10%;
+    padding-top: 7%;
+  }
+
+  .title {
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 0.8rem !important;
+  }
+
+  .c-title {
+    font-size: 1rem !important;
+    color: var(--blue);
+  }
+
+  /* navbar */
+  .top-nav .container .offcanvas {
+    right: -12rem;
+  }
+
+  .top-nav .container .offcanvas .navbar-nav {
+    margin-right: 12rem;
+  }
+
+  .top-nav .container .offcanvas .offcanvas-sosmed .text {
+    margin-left: 1.2rem !important;
+  }
+
+  /* homepage */
+  .title-hp {
+    padding-top: 30%;
+    font-size: 2rem;
+  }
+
+  .sub-title {
+    padding-right: 35%;
+  }
+
+  /* about us */
+  #about-us {
+    padding-top: 10% !important;
+  }
+
+  #about-us .row {
+    flex-direction: column-reverse;
+  }
+
+  #about-us .row .col .card-body {
+    text-align: justify;
+  }
+
+  #about-us .row .col .card-title {
+    font-size: 1rem !important;
+    padding: 5% 2% 0 2%;
+    text-align: center;
+  }
+
+  #about-us .row .col .card-body .btn {
+    justify-self: center;
+    margin-top: -5%;
+  }
+
+  /* clients 
+  jobb = 70%
+  monster 50%
+  zao = 70%
+  embun 50%*/
+
+  /* service */
+  #services {
+    display: none;
+  }
+
+  .mobile-services .services-content .card .card-body .btn {
+    width: 36%;
+    font-size: 0.8rem !important;
+  }
+
+  .mobile-services .services-content .owl-dots button {
+    width: 0.5rem;
+    height: 0.3rem;
+  }
+
+  .mobile-services .services-content .owl-dots button.active {
+    width: 15px;
+  }
+
+  /* .owl-carousel .owl-stage-outer */
+
+  /* .pagination a.active {
+  text-decoration: underline;
+  color: #0d6efd;
+  background-color: dodgerblue;
+  color: white;
+} */
+
+  /* Add a grey background color on mouse-over */
+  /* .pagination a:hover:not(.active) {text-decoration: underline;} */
+
+  /* .mobile-services .service-content .card .card-body .title{
+    text-align: center;
+    font-size: 1.2rem !important;
+    color: #0659a7;
+  } */
+
+  /* testimony */
+  .single-testimony {
+    border: 0.2rem solid #ffffff !important;
+    margin: 1% 1% !important;
+    padding: 8% !important;
+  }
+
+  .single-testimony:before {
+    font-size: 2.5rem !important;
+    left: -0.5rem !important;
+    top: -1.5rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+
+  .single-testimony:after {
+    font-size: 2.5rem !important;
+    right: -0.7rem !important;
+    bottom: -0.6rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+
+  /* clients */
+  #our-clients .brand {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* article */
+  #article .owl-carousel .card .card-body .text {
+    text-align: justify;
+  }
+
+  /* contact */
+  #contact .title {
+    text-align: left;
+  }
+
+  #contact .r-info {
+    display: grid;
+    grid-template-columns: 12% auto;
+  }
+
+  .location {
+    align-self: center;
+    width: 20rem !important;
+    height: 13rem !important;
+  }
+
+  /* footer */
+  .footer {
+    padding: 5% 10% 3% 10% !important;
+    text-align: center;
+  }
+
+  .footer .row {
+    justify-content: center;
+  }
+
+  .footer .page {
+    display: none;
+  }
+
+  .footer .col-4 {
+    margin-left: 0% !important;
+    width: 80%;
+  }
+
+  .footer .row hr {
+    display: none;
+  }
+
+  .footer .row .r-copyright {
+    flex-direction: column-reverse;
+  }
+
+  .footer .row .r-copyright .col-10 {
+    align-self: center;
+    margin-right: 0 !important;
+  }
+
+  .footer .row .r-copyright .col-10 .copyright {
+    font-size: 0.6rem !important;
+  }
+
+  .footer .row .r-copyright .col .social-icons .instagram {
+    margin-right: 30% !important;
+  }
+}
+
+/* MOBILE LANDSCAPE*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .side-nav {
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 10%;
+    padding-top: 7%;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 0.9rem !important;
+  }
+
+  .c-title {
+    font-size: 1.2rem !important;
+    color: var(--blue);
+  }
+
+  /* navbar */
+  .top-nav .container .offcanvas {
+    right: -8rem;
+  }
+
+  .top-nav .container .offcanvas .navbar-nav {
+    margin-right: 8rem;
+  }
+
+  .top-nav .container .offcanvas .offcanvas-sosmed {
+    margin-left: 5.5rem !important;
+  }
+
+  .top-nav .container .offcanvas .offcanvas-sosmed .text {
+    margin-left: 0.5rem !important;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 3.3rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    padding-right: 30%;
+  }
+
+  /* about us */
+  #about-us .row {
+    flex-direction: column-reverse;
+  }
+
+  #about-us .row .col .card-body {
+    text-align: justify;
+  }
+
+  #about-us .row .col .card-title {
+    font-size: 1.2rem !important;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  #about-us .row .col .card-body .btn {
+    justify-self: center !important;
+    margin-top: -3%;
+  }
+
+  /* service */
+  #services {
+    display: none;
+  }
+
+  /* .mobile-services .services-content .card .card-body .text{
+    text-align: justify;
+  } */
+
+  .mobile-services .services-content .card img {
+    height: 50rem !important;
+  }
+
+  .mobile-services .services-content .card .card-body .btn {
+    width: 19%;
+    font-size: 0.9rem !important;
+  }
+
+  .mobile-services .services-content .owl-dots button {
+    width: 0.6rem;
+    height: 0.4rem;
+  }
+
+  .mobile-services .services-content .owl-dots button.active {
+    width: 18px;
+  }
+
+  /* clients */
+  #our-clients .brand {
+    grid-template-columns: repeat(3, 2fr);
+    column-gap: 7% !important;
+    width: 85%;
+    margin-left: 8%;
+  }
+
+  /* testimony */
+  .single-testimony {
+    border: 0.2rem solid #ffffff !important;
+    margin: 1% 1% !important;
+    padding: 8% !important;
+  }
+
+  .single-testimony:before {
+    font-size: 3rem !important;
+    left: -0.5rem !important;
+    top: -1.5rem !important;
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  .single-testimony:after {
+    font-size: 3rem !important;
+    right: -0.7rem !important;
+    bottom: -0.6rem !important;
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  /* contact */
+  #contact .title {
+    text-align: left;
+  }
+
+  #contact .r-info {
+    display: grid;
+    grid-template-columns: 7% auto;
+  }
+
+  .location {
+    align-self: center;
+    width: 37rem !important;
+    height: 15rem !important;
+  }
+
+  /* footer */
+  .footer {
+    padding: 5% 7% 1% 7% !important;
+  }
+
+  .footer .row .col-4 img {
+    width: 50% !important;
+  }
+
+  .footer .row .col-4 {
+    margin-left: 0 !important;
+  }
+
+  .footer .row .page .c-title {
+    font-size: 1.2rem !important;
+  }
+
+  .footer .row .page .list-group .list-group-item .text {
+    font-size: 0.8rem !important;
+  }
+
+  .footer .row .r-copyright .col-10 {
+    margin-right: 0.4rem !important;
+  }
+
+  .footer .row .r-copyright .copyright {
+    font-size: 0.6rem;
+  }
+
+  .footer .row .r-copyright .col .social-icons .instagram {
+    margin-right: 2rem !important;
+  }
+}
+
+/* TABLET LANDSCAPE*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top-nav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.7rem !important;
+  }
+
+  .text {
+    font-size: 0.9rem !important;
+  }
+
+  .c-title {
+    font-size: 1.4rem !important;
+    color: var(--blue);
+  }
+
+  /* navbar */
+  .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 5rem !important;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 4rem;
+  }
+
+  .sub-title {
+    font-size: 1.1rem;
+    padding-right: 40%;
+  }
+
+  /* about us */
+  #about-us .row {
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+
+  #about-us .row .col .card-title {
+    font-size: 1.5rem !important;
+    /* padding-top: 5%; */
+  }
+
+  #about-us .row .col .card-body .btn {
+    width: 25%;
+  }
+
+  /* service */
+  .mobile-services {
+    display: none;
+  }
+
+  /* clients */
+  #our-clients .brand {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5% !important;
+  }
+
+  /* contact */
+  #contact .r-maps .c-text .r-info {
+    display: grid;
+    grid-template-columns: 15% auto !important;
+  }
+
+  /* footer */
+  /* .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
+  }
+
+  .footer .trisula .logo img {
+    width: 7rem;
+  } */
+}
+
+/* LAPTOP & LAPTOP LARGE*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .top-nav {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.9rem !important;
+  }
+
+  .text {
+    font-size: 1rem !important;
+  }
+
+  .c-title {
+    font-size: 1.3rem !important;
+    color: #0659a7;
+  }
+
+  /* navbar */
+  .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 8.5rem !important;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 4.5rem;
+  }
+
+  .sub-title {
+    font-size: 1.3rem;
+    padding-right: 50%;
+  }
+
+  /* about us */
+  #about-us .row {
+    display: grid;
+    grid-template-columns: 63% auto;
+  }
+
+  #about-us .row .col .card-body .btn {
+    width: 19%;
+    margin-top: -2%;
+  }
+
+  /* service */
+  .mobile-services {
+    display: none;
+  }
+
+  /* clients */
+  #our-clients .brand {
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+  }
+
+  #our-clients .brand .col img {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  /* contact */
+  #contact .text {
+    align-self: center;
+  }
+
+  #contact .r-info {
+    display: grid;
+    grid-template-columns: 6% auto;
+  }
+
+  #contact .r-maps {
+    /* display: grid; */
+    grid-template-columns: 65% auto;
+  }
+
+  .location {
+    width: 22rem;
+    height: 13rem;
+  }
+
+  /* footer */
+  /* .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row {
+    grid-template-columns: 85% auto;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
+  }
+
+  .footer .trisula .logo img {
+    width: 10rem;
+  } */
+}
+
+/* DEKSTOP PC*/
+@media (min-width: 1441px) and (max-width: 1950px) {
+  .top-nav {
+    display: none;
+  }
+
+  .title {
+    font-size: 2.5rem !important;
+  }
+
+  .text {
+    font-size: 1.5rem !important;
+  }
+
+  .c-title {
+    font-size: 2rem !important;
+    color: #0659a7;
+  }
+
+  /* navbar */
+  .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 14.5rem !important;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 6rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    padding-right: 45%;
+  }
+
+  /* about us */
+  #about-us .row {
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+
+  #about-us .row .col .card-title {
+    font-size: 2.5rem !important;
+  }
+
+  #about-us .row .col .card-text {
+    font-size: 1.5rem !important;
+  }
+
+  /* #about-us .row .col .card-body .btn {
+    font-size: 1.2rem;
+    width: 18%;
+  } */
+
+  /* service */
+  .mobile-services {
+    display: none;
+  }
+
+  /* clients */
+  #our-clients .brand {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* contact */
+  #contact .r-info {
+    display: grid;
+    grid-template-columns: 3% auto;
+  }
+
+  /* footer */
+  /* .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
+  }
+
+  .footer .trisula .logo img {
+    width: 10rem;
+  } */
+}
+
+/* TESTIMONY */
+.customer-testimony {
+  background-color: #5f3daf;
+}
+
+.customer-testimony .title {
+  color: #ffffff;
+}
+
+.single-testimony {
+  border: 0.15rem solid #ffffff;
+  border-radius: 2rem;
+  padding: 11%;
+  margin: 0% 5%;
+}
+
+.single-testimony:before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 3rem;
+  position: absolute;
+  background: #5f3daf;
+  left: -5px;
+  top: -30px;
+  width: 80px;
+  height: 80px;
+}
+
+.single-testimony:after {
+  content: "\f10e";
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 3rem;
+  position: absolute;
+  background: #5f3daf;
+  right: 0px;
+  bottom: -10px;
+  width: 80px;
+  height: 80px;
+}
+
+.owl-dots {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.owl-dots button {
+  background-color: #ffffff !important;
+  width: 7px;
+  height: 7px;
+  border-radius: 2rem;
+  margin-right: 1%;
+  transition: 0.3s;
+}
+
+.owl-dots button.active {
+  width: 15px;
+}
+
+/* OUR CLIENTS */
+#our-clients .brand .col {
+  align-self: center;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+#our-clients .brand .col:hover {
+  filter: grayscale(0);
+}
+
+#our-clients .brand {
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+#our-clients .sub-clients {
+  margin-bottom: 0rem !important;
+}
+
+#our-clients .title {
+  margin-bottom: 1%;
+}
+
+/* ARTICLE */
+#article {
+  gap: 2%;
+}
+
+#article .owl-carousel .owl-nav {
+  display: none;
+}
+
+#article .owl-carousel .owl-dots {
+  display: none;
+}
+
+/* ABOUT US PAGE */
+
+/* SOCIAL MEDIA PAGE */
+.social-media-page {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.list-group-item:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.list-group-item.active-menu {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+
+.footer {
+  padding: 2% 10% 2% 15%;
+}
+
+/* .footer .row .col-10 .copyright{
+  font-size: 0.8rem;
+} */
+
+/*  */
+
+.footer .row .col-4 img {
+  width: 30% !important;
+}
+
+.footer .row .col-4 {
+  margin-left: 0 !important;
+}
+
+.footer .row .page .c-title {
+  font-size: 1.2rem !important;
+}
+
+.footer .row .page .list-group .list-group-item .text {
+  font-size: 0.8rem !important;
+}
+
+.footer .row .r-copyright .col-10 {
+  margin-right: 0.4rem !important;
+}
+
+.footer .row .r-copyright .copyright {
+  font-size: 0.6rem;
+}
+
+.footer .row .r-copyright .col .social-icons .instagram {
+  margin-right: 2rem !important;
+}
