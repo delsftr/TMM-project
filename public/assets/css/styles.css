@@ -40,6 +40,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+.btn-text{
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* NAVBAR */
 .nav-container {
   position: fixed;
@@ -682,7 +687,7 @@
   }
 
   #about-us .row .col .card-body .btn {
-    width: 19%;
+    width: 15%;
     margin-top: -2%;
   }
 
@@ -810,6 +815,7 @@
   /* clients */
   #our-clients .brand {
     grid-template-columns: repeat(5, 1fr);
+    margin-top: 1rem;
   }
 
   /* contact */
@@ -839,6 +845,7 @@
 
 .customer-testimony .title {
   color: #ffffff;
+  margin-bottom: 1.5rem !important;
 }
 
 .single-testimony {
@@ -958,7 +965,16 @@
 /* FOOTER */
 
 .footer {
-  padding: 2% 10% 2% 15%;
+  padding: 3% 10% 2% 15%;
+}
+
+body > footer > div > div.row.r-copyright > div > p {
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+}
+
+.footer .row .col-3{
+  margin-bottom: 0.5rem;
 }
 
 .footer .row .col-4 img {
