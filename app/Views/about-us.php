@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css');?>" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- ICONS -->
@@ -24,7 +24,7 @@
     <!--NAVBAR-->
     <nav class="side-nav nav-container">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html#homepage">
+        <a class="navbar-brand" href="#homepage">
           <img
             src="assets/img/LOGO TRICOM-04 1.png"
             alt="Bootstrap"
@@ -45,7 +45,7 @@
         </button>
       </div>
       <div class="nav-icon text-center" id="navbarIcon">
-        <a href="index.html"><i class="bi bi-arrow-left" style="font-size: 30px; color: #000000"></i></a>
+        <a href="/"><i class="bi bi-arrow-left" style="font-size: 30px; color: #000000"></i></a>
       </div>
     </nav>
     <!-- NAVBAR END-->
@@ -68,57 +68,64 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo expedita libero repellendus voluptate cupiditate modi, tempore neque ad sint, facere esse corporis temporibus cum ab id animi perferendis voluptatum? Eos assumenda doloribus itaque omnis ullam veniam. Quisquam numquam sequi eius quibusdam hic, vero ipsam. Maxime cum officiis harum nemo nobis.
           </div>
         </div>
-        <div class="row">
-          <img src="assets/img/banner-about-us.jpg" alt="">
-        </div>
-        <div class="row" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
-          <div class="col-6">
-            <img src="assets/img/vision.jpg" style="width: 100%;" alt="">
-          </div>
-          <div class="col-6 lh-lg" style="align-self: center;">
-            <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem;">OUR VISION</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima ut eligendi nostrum facere possimus repellat sit dolores quia iste at? Perspiciatis deserunt molestiae ea! Nulla vitae alias aperiam quo praesentium ut vel fugit quidem ab id possimus quaerat voluptas exercitationem voluptatem ad necessitatibus iure, deserunt, pariatur temporibus ratione omnis. Iste.</p>
-          </div>
-        </div>
-        <div class="row" data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="3000">
-          <div class="col-6 lh-lg align-self-center">
-            <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem;">OUR MISSION</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, temporibus! Iste, omnis. Illum placeat tempora, fugit possimus iste inventore ea sequi qui perspiciatis officia quia culpa dolorem magnam quae reiciendis deleniti eum asperiores ab recusandae assumenda necessitatibus, velit voluptatem quibusdam? Itaque, officiis? Necessitatibus, magni optio. Quos voluptates excepturi voluptatem ipsa.</p>
-          </div>
-          <div class="col-6">
-            <img src="assets/img/mission.jpg" style="width: 100%;" alt="">
-          </div>
-        </div>
-        <div class="row" data-aos="fade-up"
-        data-aos-duration="3000">
-          <div class="col-6">
-            <img src="assets/img/team.png" style="width: 100%;" alt="">
-          </div>
-          <div class="col-6 lh-lg align-self-center">
-            <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem;">OUR TEAM</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, temporibus! Iste, omnis. Illum placeat tempora, fugit possimus iste inventore ea sequi qui perspiciatis officia quia culpa dolorem magnam quae reiciendis deleniti eum asperiores ab recusandae assumenda necessitatibus, velit voluptatem quibusdam? Itaque, officiis? Necessitatibus, magni optio. Quos voluptates excepturi voluptatem ipsa.</p>
-          </div>
-        </div>
   </section>
   <!-- ABOUT US PAGE END -->
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-9"><p class="text-white">&copy; <script>document.write(new Date().getFullYear())</script> Tricom</p></div>
-          <div class="col-md-1">
-            <a href="https://www.instagram.com"><i class="bi bi-instagram" style="font-size: 25px; color: #FFFFFF;"></i></a>
-            <a href="https://www.youtube.com"><i class="bi bi-youtube" style="font-size: 25px; color: #FFFFFF;"></i></a>
-          </div>
+    <div class="row">
+      <div class="col-4 col-sm-0 mb-2 ms-4">
+        <!-- <p class="text text-white mb-3" style="font-size: 0.8rem;">Powered by</p> -->
+        <img src="<?php echo base_url('assets/img/trisula-corp.png'); ?>" alt="trisula" />
+      </div>
+
+      <div class="col-3 page">
+        <h5 class="c-title text-white mb-3 fw-bold">Services</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="/social-media">Social Media</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="/photography">Photography</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="/video-production">Video Production</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="/web-design">Web Design</a></li>
+        </ul>
+      </div>
+
+      <div class="col-3 page">
+        <h5 class="c-title text-white mb-3 fw-bold">Company</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="/about-us">About Us</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="/article">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="col page">
+        <h5 class="c-title text-white mb-3 fw-bold">Contact</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a class="text text-decoration-none text-white" href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+
+      <hr class="text-success text-white" />
+
+      <div class="row r-copyright">
+        <div class="col-10 me-5 my-auto">
+          <p class="copyright text-white">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Tricom. All Rights Reserved
+          </p>
+        </div>
+
+        <div class="col">
+          <ul class="social-icons ps-0">
+            <a class="instagram text-white me-3" style="font-size: 1.2rem" href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+            <a class="youtube text-white" style="font-size: 1.3rem" href="https://www.youtube.com"><i class="bi bi-youtube"></i></a>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
     <!-- FOOTER END -->
   </body>
 </html>

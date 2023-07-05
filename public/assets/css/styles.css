@@ -69,7 +69,7 @@
   rotate: 270deg;
   font-family: "Poppins", sans-serif;
   margin-top: 4rem !important;
-  margin-bottom: 4.5rem !important;
+  margin-bottom: 3rem;
 }
 
 /* .nav-item a:active{
@@ -571,9 +571,9 @@
   }
 
   /* navbar */
-  .nav-container .side-nav .nav-menu .nav-item {
-    margin-bottom: 5rem !important;
-  }
+  /* .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 3rem !important;
+  } */
 
   /* homepage */
   .title-hp {
@@ -582,7 +582,7 @@
 
   .sub-title {
     font-size: 1.1rem;
-    padding-right: 40%;
+    padding-right: 37%;
   }
 
   /* about us */
@@ -604,6 +604,12 @@
   .mobile-services {
     display: none;
   }
+
+  #products > div.col-md-4 > img{
+    height: 17rem !important;
+  }
+
+  /* tetimony */
 
   /* clients */
   #our-clients .brand {
@@ -651,8 +657,12 @@
   }
 
   /* navbar */
+  /* .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 7rem !important;
+  } */
+
   .nav-container .side-nav .nav-menu .nav-item {
-    margin-bottom: 8.5rem !important;
+    margin-bottom: 5rem !important;
   }
 
   /* homepage */
@@ -676,9 +686,18 @@
     margin-top: -2%;
   }
 
+  body > section.container-fluid.customer-testimony > div > div.owl-stage-outer > div > div:nth-child(1) > div > p{
+    font-size: 14px;
+  }
+
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* TESTIMONY */
+  .customer-testimony .testimony-content .single-testimony .text-testi{
+    font-size: 12px !important;
   }
 
   /* clients */
@@ -910,6 +929,14 @@
   display: none;
 }
 
+#article .owl-carousel .card{
+  height: 388px;
+}
+
+#article .owl-carousel .card img{
+  height: 50%;
+}
+
 /* ABOUT US PAGE */
 
 /* SOCIAL MEDIA PAGE */
@@ -928,15 +955,11 @@
   color: #ffffff;
 }
 
+/* FOOTER */
+
 .footer {
   padding: 2% 10% 2% 15%;
 }
-
-/* .footer .row .col-10 .copyright{
-  font-size: 0.8rem;
-} */
-
-/*  */
 
 .footer .row .col-4 img {
   width: 30% !important;
@@ -962,6 +985,6 @@
   font-size: 0.6rem;
 }
 
-.footer .row .r-copyright .col .social-icons .instagram {
+/* .footer .row .r-copyright .col .social-icons .instagram {
   margin-right: 2rem !important;
-}
+} */

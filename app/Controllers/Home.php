@@ -2,15 +2,27 @@
 
 namespace App\Controllers;
 
+use App\Models\ArticleModel;
+
 class Home extends BaseController
 {
-    public function index()
+    protected $ArticleModel;
+
+    public function __construct()
     {
-        return view('homepage');
+        $this->ArticleModel = new ArticleModel();
     }
 
-    public function aboutus()
+    public function index()
     {
-        return view('about_us');
+        $data['article'] = $this->ArticleModel->getData();
+
+
+        return view('homepage', $data);
+    }
+
+    public function aboutUs()
+    {
+        return view('about-us');
     }
 }

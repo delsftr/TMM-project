@@ -17,7 +17,7 @@
     <!--NAVBAR-->
     <nav class="side-nav nav-container">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html#homepage">
+        <a class="navbar-brand" href="#homepage">
           <img
             src="assets/img/LOGO TRICOM-04 1.png"
             alt="Bootstrap"
@@ -38,7 +38,7 @@
         </button>
       </div>
       <div class="nav-icon text-center" id="navbarIcon">
-        <a href="index.html"><i class="bi bi-arrow-left" style="font-size: 30px; color: #000000"></i></a>
+        <a href="/"><i class="bi bi-arrow-left" style="font-size: 30px; color: #000000"></i></a>
       </div>
     </nav>
     <!-- NAVBAR END-->
