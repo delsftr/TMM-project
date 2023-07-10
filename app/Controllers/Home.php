@@ -15,14 +15,18 @@ class Home extends BaseController
 
     public function index()
     {
-        $data['article'] = $this->ArticleModel->getData();
 
+        $title = 'Tricom Mitra Mandiri';
 
-        return view('homepage', $data);
+        $data = $this->ArticleModel->getData();
+
+        return view('homepage', ['title' => $title, 'article' => $data]);
     }
 
     public function aboutUs()
     {
-        return view('about-us');
+        $title = ['title' => 'About Us'];
+
+        return view('about-us', $title);
     }
 }

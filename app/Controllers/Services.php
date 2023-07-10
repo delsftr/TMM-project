@@ -6,21 +6,29 @@ class Services extends BaseController
 {
     public function socialmedia()
     {
-        return view('social-media');
+        $title = ['title' => 'Social Media'];
+
+        return view('social-media', $title);
     }
 
     public function photography()
     {
-        return view('photography');
+        $title = ['title' => 'Photography'];
+
+        return view('photography', $title);
     }
 
     public function videoproduction()
     {
-        return view('video-production');
+        $title = ['title' => 'Video Production'];
+
+        return view('video-production', $title);
     }
 
     public function webdesign()
     {
-        return view('web-design');
+        $title = ['title' => 'Web Design'];
+
+        return view('web-design', $title);
     }
 }

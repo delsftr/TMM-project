@@ -15,16 +15,14 @@ class Article extends BaseController
 
     public function Article($slug = NULL)
     {
+        $title = 'Tricom Mitra Mandiri';
 
         $result = $this->ArticleModel->getDetail($slug);
 
         if (count($result)) {
-            return view('article', ['article'=>$result[0]]);
+            return view('article', ['title' => $title, 'article' => $result[0]]);
         } else {
             return redirect()->to('/');
         }
-        // $data['title'] = "article";
-
-        // return view('article', $data);
     }
 }
