@@ -2,9 +2,6 @@
 
 <?= $this->section('content'); ?>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<!-- NAVBAR END-->
-
 <!--HOMEPAGE-->
 <div class="container-fluid homepage d-flex" id="homepage">
   <div class="homepage-body" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
@@ -146,7 +143,7 @@
 <!-- OUR CLIENTS -->
 <section class="container-fluid our-clients" id="our-clients" data-aos="zoom-in" data-aos-duration="2000">
   <p class="title fs-1 fw-bold text-center">Our Satisfied Clients</p>
-  <p class="sub-clients text fw-light text-center text-dark">Let's start realizing your dream brand with Tricom Agency!.</p>
+  <p class="sub-clients text fw-light text-center text-dark">Let's start realizing your dream brand with Tricom Agency!</p>
   <div class="brand d-grid">
     <div class="col my-1">
       <img src="<?php echo base_url('assets/img/logobrand/logo-jn.png'); ?>" class="img-fluid rounded-2 border-5" alt="Jack-Nicklaus" />
@@ -194,7 +191,6 @@
       <img src="<?php echo base_url('assets/img/logobrand/logo-embun2.png'); ?>" class="img-fluid rounded-2" alt="Embun" />
     </div>
   </div>
-  <!-- <p class="sub-clients text fw-light text-center text-dark">Let's start realizing your dream brand with Tricom Agency!</p> -->
 </section>
 <!-- OUR CLIENTS END -->
 
@@ -287,10 +283,9 @@
             <div class="text lh-base fw-light">
               <?= substr($row['excerpt'], 0, 50) . "..." ?>
             </div>
-            <br />
+          </div>
+          <div class="card-footer text-center border-0 bg-transparent">
             <a href="/article/<?= $row['slug'] ?>" class="btn btn-primary btn-text text-white rounded-5 border-0 fw-light">Learn More</a>
-            <!-- <button><a href="/article/<?= $row['slug'] ?>" class="card-link text-decoration-none fw-light">READ MORE</a></button> -->
-
           </div>
         </div>
       <?php
@@ -301,35 +296,38 @@
     <?php
     endif;
     ?>
+  </div>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".article").owlCarousel({
-          loop: true,
-          margin: 10,
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            600: {
-              items: 2,
-              nav: false,
-            },
-            900: {
-              items: 2,
-              nav: false,
-            },
-            1200: {
-              items: 3,
-              nav: true,
-              loop: false,
-            },
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".article").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        // autoWidth: true,
+        mergeFit: true,
+        responsive: {
+          0: {
+            items: 1,
+            // nav: true,
           },
-        });
+          600: {
+            items: 2,
+            // nav: false,
+          },
+          900: {
+            items: 2,
+            // nav: false,
+          },
+          1200: {
+            items: 3,
+            // nav: true,
+            loop: true,
+          },
+        },
       });
-    </script>
+    });
+  </script>
 </section>
 <!-- ARTICLE END -->
 

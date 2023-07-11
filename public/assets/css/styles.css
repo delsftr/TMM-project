@@ -288,6 +288,10 @@ body > nav.top-nav.navbar.bg-light.sticky-top.shadow-lg > div > button{
   height: 50%;
 }
 
+#article .owl-carousel .card .card-footer{
+  padding-bottom: 1rem;
+}
+
 /* FOOTER */
 .footer {
   padding: 3% 10% 2% 15%;
