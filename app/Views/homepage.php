@@ -20,7 +20,7 @@
 <section class="container-fluid about-us" id="about-us">
   <div class="row">
     <div class="col">
-      <div class="card-body text d-grid gap-3" data-aos="fade-up" data-aos-duration="2000"/>
+      <div class="card-body text d-grid gap-3" data-aos="fade-up" data-aos-duration="2000">
         <p class="card-title fs-3 lh-base fw-semibold">TRICOM Agency is prepared to serve as your company's digital solution.</p>
         <p class="card-text lh-base fw-light">
           Tricom Agency is a full-service digital marketing agency based in Jakarta, Indonesia. We are powered by a team of experts in website, social media, SEO, digital ads, analytics, and marketing who work with a growth mindset to
@@ -277,7 +277,7 @@
       foreach ($article as $row) :
     ?>
         <div class="card">
-          <img src="<?= getenv("ASSETS_URL") . $row['image'] ?>" class="card-img-top" alt="Article" />
+          <img src="<?= $row['image'] ? getenv("ASSETS_URL") . $row['image'] : '' ?>" class="card-img-top" alt="Article" />
           <div class="card-body text-center text">
             <div class="c-title fw-semibold mb-2"><?= $row['title'] ?></div>
             <div class="text lh-base fw-light">
